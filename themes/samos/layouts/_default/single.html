@@ -1,0 +1,37 @@
+{{ partial "header.html" . }}
+
+<main class="post">
+  <div class="meta">
+    <h1 class="meta__title">{{ .Title }}</h1>
+    <div class="meta__information">
+      {{ if .Params.date }}
+        <span class="meta__date">{{ .Date.Format "Jan 2 2006" }}</span>
+      {{ end }}
+
+      {{ range $i := (slice "categories" "tags") }}
+        {{ with ($.Param $i) }}
+          {{ range $k := . }}
+            <a class="meta__link" href="{{ relLangURL (print "/" $i "/" $k | urlize) }}">{{$k}}</a>
+            {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  </div>
+
+  <section class="post__content">
+    {{ .Content }}
+    {{ if eq .Lang "en" }}
+      <wordcount class="wordcount">
+      {{ if .Params.bounty }}
+        <p>Translation bounty for Русский, 한국어, 日本語, 中文: {{ mul .Params.bounty 2 }} SKY</p>
+        <p>Translation bounty for other languages: {{ .Params.bounty }} SKY</p>
+      {{ else }}
+        No translation bounty
+      {{ end }}
+      </wordcount>
+    {{ end }}
+  </section>
+</main>
+
+{{ partial "telegram.html" . }}
+{{ partial "footer.html" . }}

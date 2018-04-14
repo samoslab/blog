@@ -1,0 +1,8 @@
+name = "Spaco"
+description = "Foundations for the new internet · Spaco"
+homepage = "https://www.spaco.io/"
+min_version = "0.25.1"
+
+[author]
+  name = "Spaco"
+  homepage = "https://www.spaco.io/"

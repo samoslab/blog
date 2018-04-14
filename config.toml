@@ -1,0 +1,103 @@
+baseURL = "https://blog.samos.io/"
+languageCode = "en-us"
+title = "Samos Project Blog"
+defaultContentLanguage = "en"
+
+googleAnalytics = "UA-105234182-1"
+#disqusShortname = ""
+
+# hugo-xmin specific variables
+theme = "samos"
+ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
+preserveTaxonomyNames = true
+footnotereturnlinkcontents = "↩"
+
+# enables ```lang ``` style syntax highlighted blocks
+pygmentsCodeFences = true
+pygmentsStyle = "murphy"
+
+[permalinks]
+    post = "/post/:year/:month/:day/:slug/"
+    note = "/note/:year/:month/:day/:slug/"
+
+[[menu.main]]
+    name = "Posts"
+    identifier = "posts"
+    url = "/"
+    weight = 1
+[[menu.main]]
+    name = "Categories"
+    identifier = "categories"
+    url = "/categories/"
+    weight = 2
+[[menu.main]]
+    name = "Tags"
+    identifier = "tags"
+    url = "/tags/"
+    weight = 3
+
+[[menu.footer]]
+  name = "samos project"
+  url = "http://www.samos.io/"
+  weight = 1
+
+[[menu.footer]]
+  name = "Github"
+  url = "http://github.com/samoslab"
+  weight = 2
+
+[[menu.footer]]
+  name = "Twitter"
+  url = ""
+  weight = 3
+
+[[menu.footer]]
+  name = "Reddit"
+  url = ""
+  weight = 4
+
+[[menu.footer]]
+  name = "Telegram"
+  url = "https://t.me/samosnetwork"
+  weight = 5
+
+[[menu.footer]]
+  name = "Blockchain Explorer"
+  url = "http://explorer.samos.io/"
+  weight = 6
+
+[author]
+  name = "samos"
+
+[params]
+  keywords = "samos"
+  rss = "/index.xml"
+  telegram = "https://t.me/samosnetwork"
+  description = "Samos Project Updates"
+  email = ""
+  github = "samos"
+  twitter = "samosproject"
+  twitterAnalytics = ""
+
+[Languages]
+[Languages.en]
+  weight = -1
+  title = "Samos project Blog"
+  languageName = "English"
+
+[Languages.zh]
+  weight = 1
+  title = "Samos博客"
+  hasCJKLanguage = true
+  languageName = "中文"
+
+
+[[menu.languages]]
+  name = "English"
+  weight = -1
+  url = "/"
+[[menu.languages]]
+  name = "中文"
+  weight = 1
+  url = "/zh/"
+
