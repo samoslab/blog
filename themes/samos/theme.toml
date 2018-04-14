@@ -1,8 +1,8 @@
-name = "Spaco"
-description = "Foundations for the new internet · Spaco"
-homepage = "https://www.spaco.io/"
+name = "Samos"
+description = "Foundations for the new internet · Samos"
+homepage = "http://www.samos.io/"
 min_version = "0.25.1"
 
 [author]
-  name = "Spaco"
-  homepage = "https://www.spaco.io/"
+  name = "Samos"
+  homepage = "http://www.samos.io/"
