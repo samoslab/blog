@@ -1,7 +1,7 @@
 {
-  "name": "spaco",
+  "name": "samos",
   "version": "1.0.0",
-  "description": "smart security network · Spaco",
+  "description": "samos service network",
   "main": "index.js",
   "license": "UNLICENSED",
   "scripts": {
