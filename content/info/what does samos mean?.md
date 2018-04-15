@@ -14,7 +14,7 @@ description = "what does samos mean??"
 
 Samos  is a Greek island in the eastern Aegean Sea, the birthplace of the Greek philosopher and mathematician Pythagoras.
 
-This project is named as samos,is a respect for Pythagoras and math.
+This project is named as samos,is a respect for philosophy and math.
 
 
 ![screenshot](/img/samos.png)
