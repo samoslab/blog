@@ -3,7 +3,7 @@ title = "samos是什么意思"
 tags = [
     "info",
 ]
-date = "2018-4-14"
+date = "2018-04-14"
 categories = [
     "info",
 ]

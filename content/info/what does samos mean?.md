@@ -3,7 +3,7 @@ title = "what does samos mean?"
 tags = [
     "info",
 ]
-date = "2018-4-14"
+date = "2018-04-14"
 categories = [
     "info",
 ]
