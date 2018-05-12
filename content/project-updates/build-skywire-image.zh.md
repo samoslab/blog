@@ -15,6 +15,7 @@ description = "如何打造Skycoin miner的镜像."
 ![screenshot](https://user-images.githubusercontent.com/26845312/32426764-3495e3d8-c282-11e7-8fe8-8e60e90cb906.png)
 
 
+
 # 编译原始镜像
 
 从github上下载源码
@@ -170,7 +171,9 @@ apt-get install debootstrap
 apt-get install schroot
 apt-get install binfmt-support qemu qemu-user-static u-boot-tools
 
-
+# 加入telegram
+Samos: https://t.me/samosnetwork
+Skycoin: https://t.me/Skycoin
 
 
 
