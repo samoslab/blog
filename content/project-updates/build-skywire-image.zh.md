@@ -20,6 +20,9 @@ description = "如何打造Skycoin miner的镜像."
 
 从github上下载源码
 
+https://github.com/samoslab/OrangpiH5
+
+
 编译环境:Ubuntu 14.04.5 LTS
 
 不建议使用root用户进行编译.
@@ -30,19 +33,21 @@ OrangpiH5的源码根目录下输入
 
 进入编译画面后
 
-图片: ![screenshot](https://user-images.githubusercontent.com/26845312/32426764-3495e3d8-c282-11e7-8fe8-8e60e90cb906.png)
+图片: 
 
-选择1 OrangePi Prima(internal version)
+![screenshot](/img/skywire-miner/1.png)
+
+1 OrangePi Prima(internal version)
 
 进入画面
 
-图片: ![screenshot](/img/skywire-miner/1.png)
+图片: ![screenshot](/img/skywire-miner/2.png)
 
 输入用户的root密码.
 
 进入画面
 
-图片: ![screenshot](/img/skywire-miner/2.png)
+图片: ![screenshot](/img/skywire-miner/3.png)
 
 按照需要进行编译,但首次编译的顺序必须是按如下顺序,否则会报错.
 
@@ -97,25 +102,43 @@ nano temp/etc/network/interfaces.d/eth0 
 看到如下配置
 
 auto eth0
+
   iface eth0 inet static
 
 \#    address 192.168.0.2   (manager)
+
 \#   hwaddress ether 00:21:3c:32:f4:42 (manager)
+
 \#    address 192.168.0.3 (node1)
+
 \#    hwaddress ether 00:21:3c:32:f4:43 (node1)
+
 \#    address 192.168.0.4 (node2)
+
 \#    hwaddress ether 00:21:3c:32:f4:44 (node2)
+
 \#    address 192.168.0.5 (node3)
+
 \#    hwaddress ether 00:21:3c:32:f4:45 (node3)
+
 \#    address 192.168.0.6 (node4)
+
 \#    hwaddress ether 00:21:3c:32:f4:46 (node4)
+
 \#    address 192.168.0.7 (node5)
+
 \#    hwaddress ether 00:21:3c:32:f4:47 (node5)
+
 \#    address 192.168.0.8 (node6)
+
 \#    hwaddress ether 00:21:3c:32:f4:48 (node6)
+
 \#    address 192.168.0.9 (node7)
+
 \#    hwaddress ether 00:21:3c:32:f4:49 (node7)
+
     netmask 255.255.255.0
+
     gateway 192.168.0.1
 
 dns-nameservers 192.168.0.1 8.8.8.8
@@ -123,7 +146,9 @@ dns-nameservers 192.168.0.1 8.8.8.8
 根据需要编译的目标节点按照(...)中的指示把相应的#号去掉.例如需要编译manager
 
 则把
+
 \#    address 192.168.0.2 (manager)
+
 \#   hwaddress ether 00:21:3c:32:f4:42 (manager)
 
 这两句前面的#去掉
@@ -176,7 +201,7 @@ tar -zcvf dist-manager/node-7-09.tar.gz OrangePiH5_Prima.img
 
 下载Win32DiskImager安装运行
 
-图片: ![screenshot](/img/skywire-miner/3.png)
+图片: ![screenshot](/img/skywire-miner/4.png)
 
 映像文件选择OrangePiH5_Prima.img,设备选择目标TF卡.其他必须按图中的配置
 
